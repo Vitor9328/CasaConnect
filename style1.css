@@ -1,3 +1,4 @@
+/* Estilo Geral */
 body {
     font-family: Georgia, Times, Times New Roman, serif;
     margin: 0;
@@ -8,6 +9,7 @@ body {
     min-height: 100vh;
     transition: background-color 0.3s, color 0.3s;
 }
+
 header {
     background-color: #333;
     color: #fff;
@@ -15,15 +17,18 @@ header {
     text-align: center;
     position: relative;
 }
+
 header img {
     width: 50px;
     position: absolute;
     left: 20px;
     top: 10px;
 }
+
 h1 {
     margin: 0;
 }
+
 .menu-icon, .settings-icon {
     position: absolute;
     top: 15px;
@@ -31,12 +36,16 @@ h1 {
     cursor: pointer;
     color: #fff;
 }
+
 .menu-icon {
     right: 20px;
 }
+
 .settings-icon {
     right: 60px;
 }
+
+/* Menu e Submenu */
 .menu, .settings-menu {
     display: none;
     position: absolute;
@@ -52,11 +61,13 @@ h1 {
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
+
 .menu.show, .settings-menu.show {
     display: block;
     opacity: 1;
     pointer-events: auto;
 }
+
 .menu a, .settings-menu a {
     color: #fff;
     text-decoration: none;
@@ -64,15 +75,44 @@ h1 {
     padding: 5px;
     border-bottom: 1px solid #444;
 }
+
 .menu a:hover, .settings-menu a:hover {
     background: #444;
 }
+
+/* Estilo do submenu de contatos */
+.submenu {
+    display: none;
+    padding-left: 10px;
+}
+
+.submenu a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 1px solid #444;
+}
+
+.submenu i {
+    margin-right: 8px; /* Espaço entre ícone e texto */
+    font-size: 1.2rem; /* Ajuste o tamanho do ícone */
+    vertical-align: middle;
+}
+
+.submenu a:hover {
+    background: #444;
+}
+
+/* Estilo do conteúdo */
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
     flex: 1;
 }
+
 .project-detail {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -81,31 +121,41 @@ h1 {
     padding: 20px;
     box-sizing: border-box;
 }
-.project-detail img {
-    width: 100%;
+
+/* Reduzir a imagem em 30% */
+.reduced-img {
+    width: 70%;
     border-radius: 8px;
 }
+
+/* Rodapé */
 .footer {
     background-color: #333;
     color: #fff;
     padding: 15px 20px;
     text-align: center;
 }
+
+/* Modo Escuro */
 body.dark-mode {
     background-color: #121212;
     color: #e0e0e0;
 }
-body.dark-mode header, 
-body.dark-mode .footer, 
-body.dark-mode .menu, 
+
+body.dark-mode header,
+body.dark-mode .footer,
+body.dark-mode .menu,
 body.dark-mode .settings-menu {
     background-color: #1e1e1e;
     color: #e0e0e0;
 }
+
 body.dark-mode .project-detail {
     background-color: #242424;
     border-color: #333;
 }
+
+/* Estilo do Toggle Switch */
 .toggle-switch {
     display: flex;
     align-items: center;
@@ -115,9 +165,11 @@ body.dark-mode .project-detail {
     border-radius: 20px;
     cursor: pointer;
 }
+
 .toggle-switch input {
     display: none;
 }
+
 .toggle-switch .slider {
     position: relative;
     width: 40px;
@@ -127,6 +179,7 @@ body.dark-mode .project-detail {
     transition: background-color 0.3s;
     display: inline-block;
 }
+
 .toggle-switch .slider::before {
     content: "";
     position: absolute;
@@ -138,9 +191,11 @@ body.dark-mode .project-detail {
     left: 1px;
     transition: transform 0.3s;
 }
+
 .toggle-switch input:checked + .slider {
     background-color: #4caf50;
 }
+
 .toggle-switch input:checked + .slider::before {
     transform: translateX(20px);
 }
