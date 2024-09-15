@@ -1,3 +1,4 @@
+/* Estilo Geral */
 body {
     font-family: Georgia, Times, Times New Roman, serif;
     margin: 0;
@@ -44,6 +45,7 @@ h1 {
     right: 60px;
 }
 
+/* Menu e Submenu */
 .menu, .settings-menu {
     display: none;
     position: absolute;
@@ -78,6 +80,48 @@ h1 {
     background: #444;
 }
 
+.submenu {
+    display: none;
+    padding-left: 10px;
+}
+
+.submenu a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 1px solid #444;
+}
+
+.submenu i {
+    margin-right: 8px; /* Espaço entre ícone e texto */
+    font-size: 1.2rem; /* Ajuste do tamanho do ícone */
+    vertical-align: middle;
+}
+
+/* Adicionar o CSS necessário aqui para o estilo do submenu e ícones */
+.submenu {
+    display: none;
+    padding-left: 10px;
+}
+
+.submenu a {
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+}
+
+.submenu i {
+    margin-right: 4px; /* Ajuste o espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha verticalmente o ícone com o texto */
+}
+
+.submenu a:hover {
+    background: #444;
+}
+
+/* Estilo do conteúdo */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -94,11 +138,13 @@ h1 {
     box-sizing: border-box;
 }
 
-.project-detail img {
-    width: 100%;
+/* Reduzir a imagem em 30% */
+.reduced-img {
+    width: 70%;
     border-radius: 8px;
 }
 
+/* Rodapé */
 .footer {
     background-color: #333;
     color: #fff;
@@ -106,14 +152,15 @@ h1 {
     text-align: center;
 }
 
+/* Modo Escuro */
 body.dark-mode {
     background-color: #121212;
     color: #e0e0e0;
 }
 
-body.dark-mode header, 
-body.dark-mode .footer, 
-body.dark-mode .menu, 
+body.dark-mode header,
+body.dark-mode .footer,
+body.dark-mode .menu,
 body.dark-mode .settings-menu {
     background-color: #1e1e1e;
     color: #e0e0e0;
@@ -124,6 +171,7 @@ body.dark-mode .project-detail {
     border-color: #333;
 }
 
+/* Estilo do Toggle Switch */
 .toggle-switch {
     display: flex;
     align-items: center;
