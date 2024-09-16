@@ -25,12 +25,6 @@ header img {
     top: 10px;
 }
 
-.reduced-img {
-    width: 50%; /* Tamanho ajustado para 50% */
-    max-width: 300px; /* Define um limite máximo */
-    border-radius: 8px;
-}
-
 h1 {
     margin: 0;
 }
@@ -104,7 +98,7 @@ h1 {
 .submenu i {
     margin-right: 8px; /* Espaço entre ícone e texto */
     font-size: 1.2rem; /* Ajuste o tamanho do ícone */
-    vertical-align: middle;
+    vertical-align: middle; /* Alinha verticalmente o ícone com o texto */
 }
 
 .submenu a:hover {
@@ -130,7 +124,7 @@ h1 {
 
 /* Reduzir a imagem em 30% */
 .reduced-img {
-    width: 70%;
+    width: 70%; /* Reduz para 70% do tamanho original */
     border-radius: 8px;
 }
 
@@ -148,9 +142,9 @@ body.dark-mode {
     color: #e0e0e0;
 }
 
-body.dark-mode header,
-body.dark-mode .footer,
-body.dark-mode .menu,
+body.dark-mode header, 
+body.dark-mode .footer, 
+body.dark-mode .menu, 
 body.dark-mode .settings-menu {
     background-color: #1e1e1e;
     color: #e0e0e0;
