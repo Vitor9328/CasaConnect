@@ -41,7 +41,7 @@ header img {
 }
 
 .settings-icon {
-    right: 60px;
+    right: 50px; /* Ajustado para mover a engrenagem mais para a direita */
 }
 
 .menu, .settings-menu {
